@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="row fullWidth">
+    <div class="navigation_container row fullWidth">
 
       <div class="navigation large-12 columns">
 
@@ -25,17 +25,23 @@
 
             <ul class='navigation_text_ul'>
 
-              <li class='navigation_text_li'>ABOUT</li>
-              <li class='navigation_text_li'>WORK</li>
-              <li class='navigation_text_li'>CONTACT</li>
+              <a href="#about_container"><li class='navigation_text_li' id="about_navigation_text">ABOUT</li></a>
+
+              <a href="#work_container"><li class='navigation_text_li' id="work_navigation_text">WORK</li></a>
+
+              <a href="#contact_container"><li class='navigation_text_li' id="contact_navigation_text">CONTACT</li></a>
 
             </ul>
 
           </div> <!-- End of the navigation_text large-4 -->
 
+          <div class="clearfix"></div>
+
       </div> <!-- End of the navigation large-12 -->
 
     </div> <!-- End of the row fullWidth -->
+
+
 
     <div class="row fullWidth">
 
@@ -53,6 +59,43 @@
 
     </div> <!-- End of the row fullWidth -->
 
+
+
+    <div class="row fullWidth">
+
+      <div id="about_container" class="about_container large-12 columns">
+
+      </div> <!-- End of the about_container large-12 columns -->
+
+    </div> <!-- End of the row fullWidth -->
+
+
+    <div class="row fullWidth">
+
+      <div id="work_container" class="portfolio_and_skills_container large-12 columns">
+
+      </div> <!-- End of the portfolio_and_skills large-12 columns -->
+
+    </div> <!-- End of the row fullWidth -->
+
+
+    <div class="row fullWidth">
+
+      <div id="contact_container" class="contact_container large-12 columns">
+
+      </div> <!-- End of the portfolio_and_skills large-12 columns -->
+
+    </div> <!-- End of the row fullWidth -->
+
+
+    <div class="row fullWidth">
+
+      <div class="footer_container large-12 columns">
+
+      </div> <!-- End of the portfolio_and_skills large-12 columns -->
+
+    </div> <!-- End of the row fullWidth -->
+
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/jquery.event.move.js"></script>
     <script src="assets/js/jquery.twentytwenty.js"></script>
@@ -65,6 +108,23 @@
         $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
         $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
       });
+    </script>
+
+    <script>
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
     </script>
   </body>
 </html>

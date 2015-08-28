@@ -1,11 +1,27 @@
 @font-face {
-  font-family: 'Roboto Bold';
-  src: url('fonts/Roboto-Bold.ttf') format('ttf');
+    font-family: 'robotoblack';
+    src: url('fonts/roboto-black-webfont.eot');
+    src: url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto-black-webfont.woff') format('woff'),
+         url('fonts/roboto-black-webfont.ttf') format('truetype'),
+         url('fonts/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
-  src: url('fonts/Montserrat regular.ttf') format('ttf');
+    font-family: 'montserratregular';
+    src: url('fonts/montserrat_regular-webfont.eot');
+    src: url('fonts/montserrat_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat_regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat_regular-webfont.woff') format('woff'),
+         url('fonts/montserrat_regular-webfont.ttf') format('truetype'),
+         url('fonts/montserrat_regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* Start of the Reset Styles */
@@ -81,10 +97,53 @@ table {
 }
 
 .navigation_text_ul {
-	
+	margin-top: 60px;
+	float: right;
 }
 
 .navigation_text_li {
 	display: inline;
-	font-family: 'Roboto Bold';
+	font-family: 'montserratregular';
+	font-size: 17px;
+	color: #121F45;
+}
+
+#about_navigation_text {
+	margin-right: 75px;
+}
+
+#work_navigation_text {
+	margin-right: 75px;
+}
+
+#contact_navigation_text {
+	margin-right: 75px;
+}
+
+/* Start of the About Styles */
+
+.about_container {
+	height: 360px;
+	background-color: #F05947;
+}
+
+/* Start of the Portfolio and Skills Styles */
+
+.portfolio_and_skills_container {
+	height: 2271px;
+	background-color: #F2F2F2;
+}
+
+/* Start of the Contact Styles */
+
+.contact_container {
+	height: 1059px;
+	background-color: #E5E5E5;
+}
+
+/* Start of the Contact Styles */
+
+.footer_container {
+	height: 69px;
+	background-color: #151E47;
 }
