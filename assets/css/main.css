@@ -85,6 +85,17 @@ table {
 
 /* Start of the Navigation Styles */
 
+.navigation_container {
+	position: fixed;
+    width: 100%;
+    height: 135px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
 .navigation {
 	height: 135px;
 	background-color: #FFFFFF;
@@ -120,18 +131,122 @@ table {
 	margin-right: 75px;
 }
 
+/* Start of the Slideshow Container Styles */
+
+.slideshow_container {
+	margin-top: 135px;
+}
+
 /* Start of the About Styles */
 
 .about_container {
-	height: 360px;
 	background-color: #F05947;
+}
+
+.about_container_heading {
+	font-family: 'montserratregular';
+	font-size: 35px;
+	color: #FFFFFF;
+	margin-top: 75px;
+}
+
+.about_container_paragraph {
+	font-family: 'montserratregular';
+	font-size: 20px;
+	color: #292A2C;
+	margin-top: 40px;
+	line-height: 35px;
+}
+
+.about_container_buttons {
+	font-family: 'montserratregular';
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 48px;
+	margin-bottom: 75px;
+	background-color: transparent;
+	border: 2px solid white;
+	margin-right: 25px;
+}
+
+.about_container_buttons:hover {
+	font-family: 'montserratregular';
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 48px;
+	margin-bottom: 75px;
+	background-color: #CC392E;
+	border: 2px solid white;
+	margin-right: 25px;
+}
+
+.about_container_buttons:active {
+	font-family: 'montserratregular';
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 48px;
+	margin-bottom: 75px;
+	background-color: #CC392E;
+	border: 2px solid white;
+	margin-right: 25px;
+}
+
+.about_container_buttons:visited {
+	font-family: 'montserratregular';
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 48px;
+	margin-bottom: 75px;
+	background-color: #CC392E;
+	border: 2px solid white;
+	margin-right: 25px;
 }
 
 /* Start of the Portfolio and Skills Styles */
 
 .portfolio_and_skills_container {
-	height: 2271px;
+	height: auto;
 	background-color: #F2F2F2;
+}
+
+.portfolio_and_skills_container_heading {
+	font-family: 'montserratregular';
+	font-size: 28px;
+	color: #3F3F3F;
+	margin-top: 100px;
+	font-weight: bold;
+}
+
+.skills_container_heading {
+	font-family: 'montserratregular';
+	font-size: 28px;
+	color: #3F3F3F;
+	margin-bottom: 100px;
+	font-weight: bold;
+}
+
+.portfolio_grid_container {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	height: 320px;
+}
+
+.portfolio_grid_container_grid_item {
+	background-color: grey;
+	height: 320px;
+
+}
+
+.portfolio_grid_container_grid_spacing {
+	height: 320px;
+}
+
+.portfolio_image_left {
+	margin-right: 40px;
+}
+
+.portfolio_image_right {
+	margin-left: 40px;
 }
 
 /* Start of the Contact Styles */
@@ -147,3 +262,7 @@ table {
 	height: 69px;
 	background-color: #151E47;
 }
+
+
+
+

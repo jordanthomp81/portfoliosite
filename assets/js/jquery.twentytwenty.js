@@ -24,8 +24,7 @@
       afterImg.addClass("twentytwenty-after");
       
       var overlay = container.find(".twentytwenty-overlay");
-      overlay.append("<div class='twentytwenty-before-label'></div>");
-      overlay.append("<div class='twentytwenty-after-label'></div>");
+      
 
       var calcOffset = function(dimensionPct) {
         var w = beforeImg.width();
