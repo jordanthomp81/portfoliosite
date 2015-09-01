@@ -226,13 +226,13 @@ table {
 	font-family: 'montserratregular';
 	font-size: 28px;
 	color: #3F3F3F;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	font-weight: bold;
 }
 
 .portfolio_grid_container {
 	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 	height: 320px;
 }
 
@@ -255,13 +255,12 @@ table {
 }
 
 .skills_grid_container {
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 
 .skills_grid_container_item {
 	background-color: grey;
 	height: 195px;
-
 }
 
 .skills_grid_container_item_spacing {
