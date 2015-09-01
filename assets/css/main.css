@@ -249,6 +249,20 @@ table {
 	margin-left: 40px;
 }
 
+.skills_grid_container {
+	margin-bottom: 50px;
+}
+
+.skills_grid_container_item {
+	background-color: grey;
+	height: 195px;
+
+}
+
+.skills_grid_container_item_spacing {
+	height: 195px;
+}
+
 /* Start of the Contact Styles */
 
 .contact_container {
