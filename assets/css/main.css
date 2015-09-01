@@ -282,6 +282,63 @@ table {
 	background-color: #E5E5E5;
 }
 
+.contact_container_heading {
+	font-size: 66px;
+	color: #F05947;
+	font-family: 'montserratregular';
+	margin-top: 120px;
+	font-weight: bold;
+}
+
+.contact_container_paratext {
+	font-family: 'robotolight';
+	color: #151E47;
+	font-size: 28px;
+	line-height: 45px;
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
+
+input.contact_container_input {
+	background-color: #F2F2F2;
+	border: 1px solid #BBBBBB;
+	height: 65px;
+	margin-bottom: 45px;
+	color: #969696;
+	font-family: 'robotolight';
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+::-webkit-input-placeholder {
+	color: #BBBBBB;
+	font-family: 'robotolight';
+	font-size: 15px;
+	font-weight: bold; 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #BBBBBB;
+	font-family: 'robotolight';
+	font-size: 15px;
+	font-weight: bold; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #BBBBBB;
+	font-family: 'robotolight';
+	font-size: 15px;
+	font-weight: bold;  
+}
+
+:-ms-input-placeholder {  
+    color: #BBBBBB;
+	font-family: 'robotolight';
+	font-size: 15px;
+	font-weight: bold; 
+}
+
 /* Start of the Contact Styles */
 
 .footer_container {
