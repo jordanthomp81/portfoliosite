@@ -12,6 +12,11 @@
 }
 
 @font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light.ttf') format('truetype')
+}
+
+@font-face {
     font-family: 'montserratregular';
     src: url('fonts/montserrat_regular-webfont.eot');
     src: url('fonts/montserrat_regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -261,6 +266,14 @@ table {
 
 .skills_grid_container_item_spacing {
 	height: 195px;
+}
+
+.skills_grid_container_item_text {
+	font-family: 'robotolight';
+	color: #94989B;
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 40px;
 }
 
 /* Start of the Contact Styles */
