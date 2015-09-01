@@ -369,6 +369,15 @@ table {
 	margin-top: 40px;
 }
 
+.skills_grid_container_item_text_tablet {
+	font-family: 'robotolight';
+	color: #94989B;
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+
 /* Start of the Contact Styles */
 
 .contact_container {
