@@ -314,6 +314,7 @@ table {
 	color: #3F3F3F;
 	margin-top: 100px;
 	font-weight: bold;
+	margin-bottom: 80px;
 }
 
 .skills_container_heading {
@@ -322,6 +323,10 @@ table {
 	color: #3F3F3F;
 	margin-bottom: 80px;
 	font-weight: bold;
+}
+
+#skills_heading {
+	margin-top: 50px;
 }
 
 .portfolio_grid_container {
@@ -333,7 +338,6 @@ table {
 .portfolio_grid_container_grid_item {
 	background-color: grey;
 	height: 320px;
-
 }
 
 .portfolio_grid_container_grid_spacing {
@@ -342,10 +346,20 @@ table {
 
 .portfolio_image_left {
 	margin-right: 40px;
+	margin-bottom: 80px;
 }
 
 .portfolio_image_right {
 	margin-left: 40px;
+	margin-bottom: 80px;
+}
+
+.portfolio_image_left_tablet {
+	margin-bottom: 80px;
+}
+
+.portfolio_image_right_tablet {
+	margin-bottom: 80px;
 }
 
 .skills_grid_container {
