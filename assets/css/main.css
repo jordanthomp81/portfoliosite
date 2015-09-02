@@ -112,6 +112,13 @@ table {
 	padding-left: 66px;
 }
 
+.navigation_social_icons {
+	height: 35px; 
+	margin-top: -10px; 
+	margin-left: -20px;
+	margin-right: 50px;
+}
+
 .tablet_navigation_logo {
 	height: auto;
 	margin-top: 36px;
@@ -129,6 +136,10 @@ table {
 	color: #121F45;
 }
 
+.navigation_text_li_icon {
+	display: inline;
+}
+
 #about_navigation_text {
 	margin-right: 75px;
 }
@@ -138,8 +149,23 @@ table {
 }
 
 #contact_navigation_text {
-	margin-right: 75px;
+	margin-right: 40px;
 }
+
+#github_navigation_icon {
+	height: 35px;
+	width: auto;
+	margin-top: -9px;
+	margin-right: 20px;
+}
+
+#linkedin_navigation_icon {
+	height: 35px;
+	width: auto;
+	margin-top: -9px;
+	margin-right: 20px;
+}
+
 
 /* Start of the Slideshow Container Styles */
 
