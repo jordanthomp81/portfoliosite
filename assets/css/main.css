@@ -392,6 +392,22 @@ table {
 	margin-bottom: 35px;
 }
 
+#lareyna {
+	height: auto;
+	width: auto;
+	position: relative;
+}
+
+.portfolio_and_skills_container_item_test_container_div {
+	height: 320px;
+	width: 320px;
+	position: absolute;
+	background-color: black;
+	z-index: 1;
+	top: 0;
+	right: 0;
+}
+
 /* Start of the Contact Styles */
 
 .contact_container {
@@ -532,5 +548,4 @@ textarea.contact_container_textarea {
 .blue {
 	background-color: blue;
 }
-
 
