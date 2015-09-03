@@ -714,31 +714,31 @@ please drop me a line. I’d love to hear from you.</p>
 
             <div class="large-12 columns">
           
-              <input class="contact_container_input" type="text" placeholder="Name">
+              <input id="#contact_name" class="contact_name contact_container_input" type="text" placeholder="Name">
 
             </div>
 
             <div class="large-12 columns">
           
-              <input class="contact_container_input" type="text" placeholder="Email">
+              <input id="#contact_email" class="contact_email contact_container_input" type="text" placeholder="Email">
 
             </div>
 
             <div class="large-12 columns">
           
-              <input class="contact_container_input" type="text" placeholder="Subject">
+              <input id="#contact_subject" class="contact_subject contact_container_input" type="text" placeholder="Subject">
 
             </div>
 
             <div class="large-12 columns">
           
-              <textarea class="contact_container_textarea" placeholder="Message"></textarea>
+              <textarea id="#contact_message" class="contact_message contact_container_textarea" placeholder="Message"></textarea>
 
             </div>
 
             <div class="contact_container_button_container text-center large-12 columns">
 
-              <a target="_blank" href="https://github.com/jordanthomp81" class="contact_container_button button">SUBMIT</a>
+              <a id="contact_submit" href="#" class="contact_container_button button">SUBMIT</a>
 
             </div>
 
@@ -838,16 +838,36 @@ please drop me a line. I’d love to hear from you.</p>
             }
           }
         });
+
+        $('#contact_submit').click(function() {
+          var contact_message = "Message: " + $('.contact_message').val() + " " + "Name: " + $('.contact_name').val() + " " + "Email: " + $('.contact_email').val();
+        $.ajax({
+          type: "POST",
+          url: "https://mandrillapp.com/api/1.0/messages/send.json",
+          data: {
+            "key": "Y8hdF9g7hPHqSvjQCGPJQQ",
+            "message": {
+                "html": contact_message,
+                "text": contact_message,
+                "subject": $('.contact_subject').val(),
+                "from_email": "message.jordanthompson@dev.com",
+                "from_name": $('.contact_name').val() + " - " + "Portfolio Site",
+                "to": [
+                    {
+                        "email": "designedbycyanide@gmail.com",
+                        "name": "Jordan",
+                        "type": "to"
+                    }
+                ],
+                "headers": {
+                    "Reply-To": "message.jordanthompson@dev.com"
+                }
+              }
+            }
+         });
+       });
+
       });
-
-
-      // $("td").hover(
-      //   function() {
-      //     $( this ).addClass( "hover" );
-      //   }, function() {
-      //     $( this ).removeClass( "hover" );
-      //   }
-      // );
     </script>
   </body>
 </html>
