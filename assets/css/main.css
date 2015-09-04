@@ -593,16 +593,21 @@ textarea.contact_container_textarea {
 	top: 0; left: 0; bottom: 82px; right: 0;
 	background-color: black;
 	z-index: 1;
-	opacity: .7;
+	opacity: .8;
 	width: 378px;
 	height: 320px;
 	margin: auto;
 }
 
-.caption h3, .caption p {
+.caption h3, .caption p, .caption a {
 	color: #fff;
 	margin: 20px;
 }
+
+.caption a {
+	color: #fff;
+}
+
 .caption h3 {
 	margin: 40px 20px 10px;
 	font-size: 30px;
@@ -616,6 +621,7 @@ textarea.contact_container_textarea {
 	font-size: 20px;
 	margin: 20px 20px 15px;
 }
+
 .caption a.learn-more {
 	padding: 5px 10px;
 	background: #08c;
