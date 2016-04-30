@@ -42,8 +42,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -54,7 +54,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -94,40 +94,40 @@ table {
 
 .navigation_container {
 	position: fixed;
-    width: 100%;
-    height: 135px;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .navigation {
-	height: 135px;
+	height: 100px;
 	background-color: #FFFFFF;
 }
 
 .navigation_logo {
 	height: auto;
-	margin-top: 36px;
+	margin-top: 25px;
 	padding-left: 66px;
 }
 
 .navigation_social_icons {
-	height: 35px; 
-	margin-top: -10px; 
+	height: 35px;
+	margin-top: -10px;
 	margin-left: -20px;
 	margin-right: 50px;
 }
 
 .tablet_navigation_logo {
 	height: auto;
-	margin-top: 36px;
+	margin-top: 24px;
 }
 
 .navigation_text_ul {
-	margin-top: 60px;
+	margin-top: 40px;
 	float: right;
 }
 
@@ -172,18 +172,21 @@ table {
 /* Start of the Slideshow Container Styles */
 
 .slideshow_container {
-	margin-top: 135px;
+	margin-top: 100px;
 }
 
 /* Start of the About Styles */
 
 .about_container {
 	background-color: #F05947;
+  padding: 0 5%;
+  height: 432px;
 }
 
 .about_container_tablet {
 	background-color: #F05947;
-	margin-top: 135px;
+	margin-top: 100px;
+  padding: 0 5%;
 }
 
 .about_container_heading {
@@ -191,6 +194,11 @@ table {
 	font-size: 35px;
 	color: #FFFFFF;
 	margin-top: 75px;
+  /*display: none;*/
+}
+
+.about_container_heading.active {
+	display: block;
 }
 
 .about_container_paragraph {
@@ -199,6 +207,19 @@ table {
 	color: #292A2C;
 	margin-top: 40px;
 	line-height: 35px;
+  /*display: none;*/
+}
+
+.about_container_paragraph.active {
+  /*display: block;*/
+}
+
+.about_container_buttons_container {
+  /*display: none;*/
+}
+
+.about_container_buttons_container.active {
+  /*display: block;*/
 }
 
 .about_container_buttons {
@@ -333,7 +354,12 @@ table {
 
 .portfolio_and_skills_container {
 	height: auto;
+  /*overflow: auto;*/
 	background-color: #F2F2F2;
+}
+
+.portfolio_and_skills_container_large.show-for-large-up {
+  height: 1200px;
 }
 
 .portfolio_and_skills_container_heading {
@@ -354,7 +380,12 @@ table {
 }
 
 #skills_heading {
+  /*display: none;*/
 	margin-top: 50px;
+}
+
+#skills_heading.active {
+  /*display: block;*/
 }
 
 .portfolio_grid_container {
@@ -373,7 +404,7 @@ table {
 }
 
 .portfolio_image_left {
-	
+
 	margin-bottom: 80px;
 }
 
@@ -392,6 +423,14 @@ table {
 
 .skills_grid_container {
 	margin-bottom: 80px;
+}
+
+.skills-icon {
+  /*display: none;*/
+}
+
+.skills-icon.active {
+  display: block;
 }
 
 .skills_grid_container_item {
@@ -493,28 +532,28 @@ textarea.contact_container_textarea {
 	color: #BBBBBB;
 	font-family: 'robotolight';
 	font-size: 15px;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 :-moz-placeholder { /* Firefox 18- */
     color: #BBBBBB;
 	font-family: 'robotolight';
 	font-size: 15px;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
     color: #BBBBBB;
 	font-family: 'robotolight';
 	font-size: 15px;
-	font-weight: bold;  
+	font-weight: bold;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
     color: #BBBBBB;
 	font-family: 'robotolight';
 	font-size: 15px;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 .contact_container_button_container {
